@@ -1,0 +1,35 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100% ;
+  }
+  
+  li {
+    float: right;
+    margin-top: 30px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  
+  li a:hover {
+    color: rgb(240, 66, 66);
+  }
+
+.logo{
+    width: 8%;
+    height: 8%;
+    padding: 15px;
+}
