@@ -1,35 +1,77 @@
+body{
+  background-color:	rgb(44, 59, 69)
+}
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100% ;
-  }
-  
-  li {
-    float: right;
-    margin-top: 30px;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  
-  li a:hover {
-    color: rgb(240, 66, 66);
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
 
-.logo{
-    width: 8%;
-    height: 8%;
-    padding: 15px;
+ul li {
+  float: right;
+  margin-top: 30px;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+li a:hover {
+  color: rgb(240, 66, 66);
+}
+
+.logo {
+  width: 8%;
+  height: 8%;
+  padding: 15px;
+}
+
+.divTable {
+  margin: auto;
+  display: table;
+  width: auto;
+  background-color: #eee;
+  border: 1px solid #666666;
+  border-spacing: 5px;
+  position: center;
+}
+
+.divRow {
+  display: table-row;
+  width: auto;
+}
+
+.divCell {
+  float: left;
+  display: table-column;
+  width: 150px;
+  height: 80px;
+  background-color: #ccc;
+  text-align: center;
+  text-shadow: #333;
+  border-radius: 12px;
+  margin: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  border: none;
+}
+
+.divCell:hover{
+  background-color: rgb(116, 113, 113);
+  transition: 0.8s;
+}
+
+.etlap{
+  
 }
