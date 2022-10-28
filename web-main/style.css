@@ -1,0 +1,129 @@
+body{
+  background-color:	rgb(44, 59, 69)
+}
+
+nav[class="nav"]{
+  animation: load 1s forwards;
+}
+
+nav[class="nav"] ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+nav[class="nav"] li {
+  float: right;
+  margin-top: 2.5%;
+}
+
+nav[class="nav"] li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+  border-radius: 10px;
+}
+
+nav[class="nav"] li a:hover {
+  background-color: #111;
+  color: crimson;
+}
+nav[class="nav"] ul img{
+  width: 8%;
+  padding: 1%;
+}
+
+@keyframes load {
+  0% {opacity: 0%;}
+  10% {opacity: 10%;}
+  25% {opacity: 25%;}
+  35% {opacity: 35%;}
+  50% {opacity: 50%;}
+  65% {opacity: 65%;}
+  75% {opacity: 75%;}
+  85% {opacity: 85%;}
+  100% {opacity: 100%;}
+}
+.tablebox{
+  padding: 100%;
+  align-self: center;
+  scroll-behavior: smooth;
+  
+}
+.cell a {
+  padding: 35px;
+  color: wheat;
+  font-size: large;
+}
+.cell{
+  border: #111 solid;
+  width: 100%;
+}
+.scroll{
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  animation: load 1s forwards;
+}
+
+@keyframes load {
+  0%   {opacity: 0%;}
+  25%  {opacity: 25%;}
+  75%  {opacity: 75%;}
+  100% {opacity: 100%;}
+}
+
+ul li {
+  float: right;
+  margin-top: 30px;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+li a:hover {
+  color: rgb(240, 66, 66);
+}
