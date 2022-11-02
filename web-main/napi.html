@@ -2,21 +2,19 @@
 <html lang="hu">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32" />
     <script src="script.js"></script>
     <title>Red Horns Restaurant</title>
-</head>
 
-<body>
     <nav class="nav">
         <ul>
-            <img src="kep/logo.png" alt="">
+            <img src="kep/logo.png" alt="" />
             <li><a class="active" href="index.html">Főoldal</a></li>
             <li><a href="napi.html">Napi Menü</a></li>
             <li><a href="etlap.html">Étlap</a></li>
@@ -30,47 +28,377 @@
         </path>
     </svg>
 
-    <div class="tableBox">
-        <div class="levesek scroll">
-            <div class="cell">
-                <a>Levesek</a>
-                <a>Főételek</a>
-                <a>Desszert</a>
-                <a>Italok</a>
-            </div>
-            <div>
-                <div class="levesek scroll">
-                    <div class="cell">
-                        <a>Levesek</a>
-                        <a>Főételek</a>
-                        <a>Desszert</a>
-                        <a>Italok</a>
+    <div class="etelek">
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="leves" value="one_value" checked="checked" />
+                <div class="container">
+                    <img src="kep/zoldsegleves.jpg" alt="leves" style="width: 440px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="leves">Zöldség leves</label>
                     </div>
-                    <div>
-                        <div class="levesek scroll">
-                            <div class="cell">
-                                <a>Levesek</a>
-                                <a>Főételek</a>
-                                <a>Desszert</a>
-                                <a>Italok</a>
-                            </div>
-                            <div>
-
-                            </div>
-                        </div>
+                    <div class="lent">
+                        <label for="ar">1500FT</label>
                     </div>
+                </div>
+            </label>
+        </div>
 
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="leves" value="one_value" />
+                <div class="container">
+                    <img src="kep/gulyas-leves.jpg" alt="leves" style="width: 430px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="leves">Gulyás leves</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">1500FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
 
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="leves" value="one_value" />
+                <div class="container">
+                    <img src="kep/gyumolcsleves.jpg" alt="leves" style="width: 430px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="leves">Gyümölcs leves</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">1500FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
 
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="leves" value="one_value" />
+                <div class="container">
+                    <img src="kep/husleves.jpg" alt="leves" style="width: 380px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="leves">Húsleves</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">1500FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                        <path fill="	#C41E3A" fill-opacity="1"
-                            d="M0,224L26.7,229.3C53.3,235,107,245,160,240C213.3,235,267,213,320,186.7C373.3,160,427,128,480,101.3C533.3,75,587,53,640,85.3C693.3,117,747,203,800,234.7C853.3,267,907,245,960,218.7C1013.3,192,1067,160,1120,133.3C1173.3,107,1227,85,1280,106.7C1333.3,128,1387,192,1413,224L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
-                        </path>
-                    </svg>
-                    <ul class="nav">
-                        <h3 style="text-align:center; position: relative;">Információk</h3>
-                    </ul>
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="leves" value="one_value" />
+                <div class="container">
+                    <img src="kep/frankleves.jpg" alt="leves" style="width: 430px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="leves">Frankfurti leves</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">1500FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="leves" value="one_value" />
+                <div class="container">
+                    <img src="kep/plaoczleves.jpg" alt="leves" style="width: 320px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="leves">Palóc Leves</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">1500FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <!-- Fotetelek -->
+
+    <div class="etelek">
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="foetel" value="one_value" />
+                <div class="container">
+                    <img src="kep/toltottkaposzta.jpg" alt="foetel" style="width: 400px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="foetel">Töltött káposzta</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">2900FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="foetel" value="one_value" />
+                <div class="container">
+                    <img src="kep/hamburger.jpg" alt="foetel" style="width: 330px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="foetel">Hamburger</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">2900FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="foetel" value="one_value" />
+                <div class="container">
+                    <img src="kep/lasagne.jpg" alt="foetel" style="width: 380px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="foetel">Lasagne</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">2900FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="foetel" value="one_value" />
+                <div class="container">
+                    <img src="kep/rantotthus.jpg" alt="foetel" style="width: 270px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="foetel">Rántotthús krumplival</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">2900FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="foetel" value="one_value" />
+                <div class="container">
+                    <img src="kep/rakottkrumpli.jpg" alt="foetel" style="width: 440px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="foetel">Rakott krumpli</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">2900FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="foetel" value="one_value" />
+                <div class="container">
+                    <img src="kep/porkolt.jpg" alt="foetel" style="width: 320px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="foetel">Pörkö</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">2900FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="etelek">
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="foetel" value="one_value" />
+                <div class="container">
+                    <img src="kep/palacsinta80001.jpg" alt="desszert" style="width: 450px" onclick="frissit()"
+                        id="kep" />
+                    <div class="kozep">
+                        <label for="desszert">Palacsinta</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">1800FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="desszert" value="one_value" />
+                <div class="container">
+                    <img src="kep/kokusz.jpg" alt="desszert" style="width: 430px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="desszert">Kókuszgolyó</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">1800FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="desszert" value="one_value" />
+                <div class="container">
+                    <img src="kep/meggyespite.jpg" alt="desszert" style="width: 300px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="desszert">Meggyespite</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">1800FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="desszert" value="one_value" />
+                <div class="container">
+                    <img src="kep/mignon.jpg" alt="desszert" style="width: 440px" onclick="frissit()" />
+                    <div class="kozep">
+                        <label for="desszert">Mignon</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">1800FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="desszert" value="one_value" />
+                <div class="container">
+                    <img src="kep/madartej.jpg" alt="desszert" style="width: 445px" onclick="frissit()" on />
+                    <div class="kozep">
+                        <label for="desszert">Madártej</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">1800FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="desszert" value="one_value" />
+                <div class="container">
+                    <img src="kep/gofri.jpg" alt="desszert" style="width: 400px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="desszert">Gofri</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">1800FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="etelek">
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="ital" value="one_value" />
+                <div class="container">
+                    <img src="kep/limonade.jpg" alt="ital" style="width: 430px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="ital">Limonádé</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">500FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="ital" value="one_value" />
+                <div class="container">
+                    <img src="kep/fanta2.jpg" alt="ital" style="width: 420px;" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="ital">Fanta</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">500FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="ital" value="one_value" />
+                <div class="container">
+                    <img src="kep/kinley.jpg" alt="ital" style="width: 400px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="ital">Kinley (többféle)</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">500FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="ital" value="one_value" />
+                <div class="container">
+                    <img src="kep/víz.jpg" alt="ital" style="width: 300px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="ital">Víz (többféle)</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">500FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="ital" value="one_value" />
+                <div class="container">
+                    <img src="kep/mountaine.jpg" alt="ital" style="width: 300px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="ital">Mountain Dew</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">500FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="oszlop">
+            <label class="labl">
+                <input type="radio" name="ital" value="one_value" />
+                <div class="container">
+                    <img src="kep/coca cola.jpg" alt="ital" style="width: 420px" onclick="frissit()" id="kep" />
+                    <div class="kozep">
+                        <label for="ital">Coca-cola</label>
+                    </div>
+                    <div class="lent">
+                        <label for="ar">500FT</label>
+                    </div>
+                </div>
+            </label>
+        </div>
+
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="	#C41E3A" fill-opacity="1"
+            d="M0,224L26.7,229.3C53.3,235,107,245,160,240C213.3,235,267,213,320,186.7C373.3,160,427,128,480,101.3C533.3,75,587,53,640,85.3C693.3,117,747,203,800,234.7C853.3,267,907,245,960,218.7C1013.3,192,1067,160,1120,133.3C1173.3,107,1227,85,1280,106.7C1333.3,128,1387,192,1413,224L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+        </path>
+    </svg>
+</head>
+
+<body>
+    <div class="footer">
+        <br /><br /><br />
+        <p>Red Horns Restaurant ©2022</p>
+        <br />
+    </div>
 </body>
 
 </html>
