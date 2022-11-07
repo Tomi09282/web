@@ -81,8 +81,65 @@ svg {
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
-  width: 100%;
-  height: fit-content;
+  width: 92%;
+  float: right;
+  height: 406px;
+  border-left: #ff4848 solid 4px;
+}
+
+.pre {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 8%;
+  float: left;
+  height: 406px;
+}
+
+.jelolo{
+  display: flex;
+  border: #ff4848 solid 5px;
+  border-radius: 15px;
+  writing-mode:vertical-lr;
+  text-orientation: upright;
+  font-size: 2.46em;
+  width: 150px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.jelolo2{
+  display: flex;
+  border: #ff4848 solid 5px;
+  border-radius: 15px;
+  writing-mode:vertical-lr;
+  text-orientation: upright;
+  font-size: 2.16em;
+  color: aliceblue;
+  width: 150px;
+}
+
+.jelolo3{
+  display: flex;
+  border: #ff4848 solid 5px;
+  border-radius: 15px;
+  writing-mode:vertical-lr;
+  text-orientation: upright;
+  font-size: 2.2em;
+  color: aliceblue;
+  width: 150px;
+}
+
+.jelolo4{
+  display: flex;
+  border: #ff4848 solid 5px;
+  border-radius: 15px;
+  writing-mode:vertical-lr;
+  text-orientation: upright;
+  font-size: 2.865em;
+  color: aliceblue;
+  width: 150px;
+  padding-left: -10px;
 }
 
 .oszlop {
@@ -107,6 +164,42 @@ div.oszlop img:hover {
 
 .container {
   position: relative;
+}
+
+.levesek,
+.foetelek,
+.desszertek,
+.Üdítők,
+.eloetelek,
+.koretek {
+  position: relative;
+  border-bottom: #ff4848 dotted 5px;
+  color: whitesmoke;
+  text-align: center;
+  background: rgb(44, 59, 69, 0.8);
+  padding: 15px;
+  
+}
+
+
+
+.etlap {
+  list-style-type: none;
+  font-size: 1.2em;
+  text-shadow: 5px;
+}
+.levesek h2,
+.foetelek h2,
+.desszertek h2,
+.Üdítők h2,
+.eloetelek h2,
+.koretek h2 {
+  color: #ff6161;
+  padding-bottom: 30px;
+
+}
+.eloetelek{
+  border-top:#ff4848 dotted 5px ;
 }
 
 .kozep {
@@ -152,13 +245,13 @@ div.oszlop img:hover {
 img[alt="kosarlogo"] {
   size: 20em;
 }
-.footer{
+.footer {
   position: relative;
   color: aliceblue;
   background-color: dimgray;
 }
 .footer p,
-.footer h3{
+.footer h3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -166,22 +259,82 @@ img[alt="kosarlogo"] {
   font-size: 2rem;
   color: rgb(255, 78, 78);
 }
-div[class="container"] img:checked{
-border: #00ff37 solid;
+
+div[class="container"] img:checked {
+  border: #00ff37 solid;
 }
 
 .labl {
-  display : block;
+  display: block;
   width: 400px;
 }
-.labl > input{
+.labl > input {
   visibility: hidden;
   position: absolute;
 }
-.labl > input + div{
-  cursor:pointer;
-  border:2px solid transparent;
+.labl > input + div {
+  cursor: pointer;
+  border: 2px solid transparent;
 }
-.labl > input:checked + div img{
+.labl > input:checked + div img {
   border: 5px solid #ff4848;
+}
+
+
+footer .utils {
+  background: #d0d0d0;
+}
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 25px 25px 25px;
+}
+
+footer .utils img {
+  max-height: 250px;
+  margin: auto;
+  display: block;
+}
+
+footer .utils .block {
+  flex: 1;
+  margin: 0px 35px 0px 35px;
+}
+.item-footer button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  background: #61ec70;
+  border: transparent;
+  border-bottom: 3px solid #5eda64;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.item-footer button:hover,
+.item-footer button:focus,
+.item-footer button.focus,
+.item-footer button:focus:active,
+.item-footer button:hover:active {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  background: #51c55d;
+  border: transparent;
+  border-bottom: 3px solid #5eda64;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+footer .utils {
+  background: #333333;
+}
+.modal-footer {
+  border-top: 1px solid #4e4e4e;
+}
+.row .block .title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: wheat;
+  margin-bottom: 15px;
+  position: relative;
 }

@@ -15,10 +15,9 @@
     <nav class="nav">
         <ul>
             <img src="kep/logo.png" alt="" />
-            <li><a class="active" href="index.html">Főoldal</a></li>
             <li><a href="napi.html">Napi Menü</a></li>
             <li><a href="etlap.html">Étlap</a></li>
-            <li><a href="elerhetoseg.html">Elérhetőség</a></li>
+            <li><a class="active" href="index.html">Főoldal</a></li>
         </ul>
     </nav>
 
@@ -27,13 +26,21 @@
             d="M0,224L26.7,229.3C53.3,235,107,245,160,240C213.3,235,267,213,320,186.7C373.3,160,427,128,480,101.3C533.3,75,587,53,640,85.3C693.3,117,747,203,800,234.7C853.3,267,907,245,960,218.7C1013.3,192,1067,160,1120,133.3C1173.3,107,1227,85,1280,106.7C1333.3,128,1387,192,1413,224L1440,256L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
         </path>
     </svg>
-
+    <div class="pre">
+        <label class="labl">
+            <div class="jelolo">
+                <p>
+                    Levesek
+                </p>
+            </div>
+        </label>
+    </div>
     <div class="etelek">
         <div class="oszlop">
             <label class="labl">
                 <input type="radio" name="leves" value="one_value" checked="checked" />
                 <div class="container">
-                    <img src="kep/zoldsegleves.jpg" alt="leves" style="width: 440px" onclick="frissit()" id="kep" />
+                    <img src="kep/zoldsegleves.jpg" alt="leves" style="width: 440px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="leves">Zöldség leves</label>
                     </div>
@@ -48,7 +55,7 @@
             <label class="labl">
                 <input type="radio" name="leves" value="one_value" />
                 <div class="container">
-                    <img src="kep/gulyas-leves.jpg" alt="leves" style="width: 430px" onclick="frissit()" id="kep" />
+                    <img src="kep/gulyas-leves.jpg" alt="leves" style="width: 430px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="leves">Gulyás leves</label>
                     </div>
@@ -63,7 +70,7 @@
             <label class="labl">
                 <input type="radio" name="leves" value="one_value" />
                 <div class="container">
-                    <img src="kep/gyumolcsleves.jpg" alt="leves" style="width: 430px" onclick="frissit()" id="kep" />
+                    <img src="kep/gyumolcsleves.jpg" alt="leves" style="width: 430px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="leves">Gyümölcs leves</label>
                     </div>
@@ -78,7 +85,7 @@
             <label class="labl">
                 <input type="radio" name="leves" value="one_value" />
                 <div class="container">
-                    <img src="kep/husleves.jpg" alt="leves" style="width: 380px" onclick="frissit()" id="kep" />
+                    <img src="kep/husleves.jpg" alt="leves" style="width: 380px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="leves">Húsleves</label>
                     </div>
@@ -93,7 +100,7 @@
             <label class="labl">
                 <input type="radio" name="leves" value="one_value" />
                 <div class="container">
-                    <img src="kep/frankleves.jpg" alt="leves" style="width: 430px" onclick="frissit()" id="kep" />
+                    <img src="kep/frankleves.jpg" alt="leves" style="width: 430px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="leves">Frankfurti leves</label>
                     </div>
@@ -107,7 +114,7 @@
             <label class="labl">
                 <input type="radio" name="leves" value="one_value" />
                 <div class="container">
-                    <img src="kep/plaoczleves.jpg" alt="leves" style="width: 320px" onclick="frissit()" id="kep" />
+                    <img src="kep/plaoczleves.jpg" alt="leves" style="width: 320px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="leves">Palóc Leves</label>
                     </div>
@@ -120,13 +127,23 @@
     </div>
 
     <!-- Fotetelek -->
+    <div class="pre">
+        <label class="labl">
+            <div class="jelolo2">
+                <p>
+                    Főételek
+                </p>
+            </div>
+        </label>
+    </div>
+    
 
     <div class="etelek">
         <div class="oszlop">
             <label class="labl">
-                <input type="radio" name="foetel" value="one_value" />
+                <input type="radio" name="foetel" value="one_value" id="gomb" />
                 <div class="container">
-                    <img src="kep/toltottkaposzta.jpg" alt="foetel" style="width: 400px" onclick="frissit()" id="kep" />
+                    <img src="kep/toltottkaposzta.jpg" alt="foetel" style="width: 400px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="foetel">Töltött káposzta</label>
                     </div>
@@ -139,9 +156,9 @@
 
         <div class="oszlop">
             <label class="labl">
-                <input type="radio" name="foetel" value="one_value" />
+                <input type="radio" name="foetel" value="one_value" id="gomb" />
                 <div class="container">
-                    <img src="kep/hamburger.jpg" alt="foetel" style="width: 330px" onclick="frissit()" id="kep" />
+                    <img src="kep/hamburger.jpg" alt="foetel" style="width: 330px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="foetel">Hamburger</label>
                     </div>
@@ -153,9 +170,9 @@
         </div>
         <div class="oszlop">
             <label class="labl">
-                <input type="radio" name="foetel" value="one_value" />
+                <input type="radio" name="foetel" value="one_value" id="gomb" />
                 <div class="container">
-                    <img src="kep/lasagne.jpg" alt="foetel" style="width: 380px" onclick="frissit()" id="kep" />
+                    <img src="kep/lasagne.jpg" alt="foetel" style="width: 380px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="foetel">Lasagne</label>
                     </div>
@@ -167,9 +184,9 @@
         </div>
         <div class="oszlop">
             <label class="labl">
-                <input type="radio" name="foetel" value="one_value" />
+                <input type="radio" name="foetel" value="one_value" id="gomb" />
                 <div class="container">
-                    <img src="kep/rantotthus.jpg" alt="foetel" style="width: 270px" onclick="frissit()" id="kep" />
+                    <img src="kep/rantotthus.jpg" alt="foetel" style="width: 270px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="foetel">Rántotthús krumplival</label>
                     </div>
@@ -181,9 +198,9 @@
         </div>
         <div class="oszlop">
             <label class="labl">
-                <input type="radio" name="foetel" value="one_value" />
+                <input type="radio" name="foetel" value="one_value" id="gomb" />
                 <div class="container">
-                    <img src="kep/rakottkrumpli.jpg" alt="foetel" style="width: 440px" onclick="frissit()" id="kep" />
+                    <img src="kep/rakottkrumpli.jpg" alt="foetel" style="width: 440px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="foetel">Rakott krumpli</label>
                     </div>
@@ -195,9 +212,9 @@
         </div>
         <div class="oszlop">
             <label class="labl">
-                <input type="radio" name="foetel" value="one_value" />
+                <input type="radio" name="foetel" value="one_value" id="gomb" />
                 <div class="container">
-                    <img src="kep/porkolt.jpg" alt="foetel" style="width: 320px" onclick="frissit()" id="kep" />
+                    <img src="kep/porkolt.jpg" alt="foetel" style="width: 320px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="foetel">Pörkö</label>
                     </div>
@@ -209,12 +226,22 @@
         </div>
     </div>
 
+    <div class="pre">
+        <label class="labl">
+            <div class="jelolo3">
+                <p>
+                    Desszert
+                </p>
+            </div>
+        </label>
+    </div>
+
     <div class="etelek">
         <div class="oszlop">
             <label class="labl">
-                <input type="radio" name="foetel" value="one_value" />
+                <input type="radio" name="foetel" value="one_value" id="gomb" />
                 <div class="container">
-                    <img src="kep/palacsinta80001.jpg" alt="desszert" style="width: 450px" onclick="frissit()"
+                    <img src="kep/palacsinta80001.jpg" alt="desszert" style="width: 450px" onclick="vissza()"
                         id="kep" />
                     <div class="kozep">
                         <label for="desszert">Palacsinta</label>
@@ -230,7 +257,7 @@
             <label class="labl">
                 <input type="radio" name="desszert" value="one_value" />
                 <div class="container">
-                    <img src="kep/kokusz.jpg" alt="desszert" style="width: 430px" onclick="frissit()" id="kep" />
+                    <img src="kep/kokusz.jpg" alt="desszert" style="width: 430px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="desszert">Kókuszgolyó</label>
                     </div>
@@ -244,7 +271,7 @@
             <label class="labl">
                 <input type="radio" name="desszert" value="one_value" />
                 <div class="container">
-                    <img src="kep/meggyespite.jpg" alt="desszert" style="width: 300px" onclick="frissit()" id="kep" />
+                    <img src="kep/meggyespite.jpg" alt="desszert" style="width: 300px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="desszert">Meggyespite</label>
                     </div>
@@ -258,7 +285,7 @@
             <label class="labl">
                 <input type="radio" name="desszert" value="one_value" />
                 <div class="container">
-                    <img src="kep/mignon.jpg" alt="desszert" style="width: 440px" onclick="frissit()" />
+                    <img src="kep/mignon.jpg" alt="desszert" style="width: 440px" onclick="vissza()" />
                     <div class="kozep">
                         <label for="desszert">Mignon</label>
                     </div>
@@ -272,7 +299,7 @@
             <label class="labl">
                 <input type="radio" name="desszert" value="one_value" />
                 <div class="container">
-                    <img src="kep/madartej.jpg" alt="desszert" style="width: 445px" onclick="frissit()" on />
+                    <img src="kep/madartej.jpg" alt="desszert" style="width: 445px" onclick="vissza()" on />
                     <div class="kozep">
                         <label for="desszert">Madártej</label>
                     </div>
@@ -286,7 +313,7 @@
             <label class="labl">
                 <input type="radio" name="desszert" value="one_value" />
                 <div class="container">
-                    <img src="kep/gofri.jpg" alt="desszert" style="width: 400px" onclick="frissit()" id="kep" />
+                    <img src="kep/gofri.jpg" alt="desszert" style="width: 400px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="desszert">Gofri</label>
                     </div>
@@ -298,12 +325,22 @@
         </div>
     </div>
 
+    <div class="pre">
+        <label class="labl">
+            <div class="jelolo4">
+                <p>
+                    Italok
+                </p>
+            </div>
+        </label>
+    </div>
+
     <div class="etelek">
         <div class="oszlop">
             <label class="labl">
                 <input type="radio" name="ital" value="one_value" />
                 <div class="container">
-                    <img src="kep/limonade.jpg" alt="ital" style="width: 430px" onclick="frissit()" id="kep" />
+                    <img src="kep/limonade.jpg" alt="ital" style="width: 430px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="ital">Limonádé</label>
                     </div>
@@ -317,7 +354,7 @@
             <label class="labl">
                 <input type="radio" name="ital" value="one_value" />
                 <div class="container">
-                    <img src="kep/fanta2.jpg" alt="ital" style="width: 420px;" onclick="frissit()" id="kep" />
+                    <img src="kep/fanta2.jpg" alt="ital" style="width: 420px;" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="ital">Fanta</label>
                     </div>
@@ -331,7 +368,7 @@
             <label class="labl">
                 <input type="radio" name="ital" value="one_value" />
                 <div class="container">
-                    <img src="kep/kinley.jpg" alt="ital" style="width: 400px" onclick="frissit()" id="kep" />
+                    <img src="kep/kinley.jpg" alt="ital" style="width: 400px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="ital">Kinley (többféle)</label>
                     </div>
@@ -345,7 +382,7 @@
             <label class="labl">
                 <input type="radio" name="ital" value="one_value" />
                 <div class="container">
-                    <img src="kep/víz.jpg" alt="ital" style="width: 300px" onclick="frissit()" id="kep" />
+                    <img src="kep/víz.jpg" alt="ital" style="width: 300px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="ital">Víz (többféle)</label>
                     </div>
@@ -359,7 +396,7 @@
             <label class="labl">
                 <input type="radio" name="ital" value="one_value" />
                 <div class="container">
-                    <img src="kep/mountaine.jpg" alt="ital" style="width: 300px" onclick="frissit()" id="kep" />
+                    <img src="kep/mountaine.jpg" alt="ital" style="width: 300px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="ital">Mountain Dew</label>
                     </div>
@@ -373,7 +410,7 @@
             <label class="labl">
                 <input type="radio" name="ital" value="one_value" />
                 <div class="container">
-                    <img src="kep/coca cola.jpg" alt="ital" style="width: 420px" onclick="frissit()" id="kep" />
+                    <img src="kep/coca cola.jpg" alt="ital" style="width: 420px" onclick="vissza()" id="kep" />
                     <div class="kozep">
                         <label for="ital">Coca-cola</label>
                     </div>
@@ -394,11 +431,54 @@
 </head>
 
 <body>
-    <div class="footer">
-        <br /><br /><br />
-        <p>Red Horns Restaurant ©2022</p>
-        <br />
-    </div>
+    <footer class="footer">
+        <div class="utils">
+            <div class="container">
+                <div class="row">
+                    <div class="block">
+                        <img src="kep/logo.png" />
+                    </div>
+                    <div class="block">
+                        <div class="title">Cég Információk</div>
+                        <div class="text">
+                            <b>Red Horns Restaurant</b><br />
+                            <b>Tel.:</b> 06-52/970-840<br />
+                            <b>Mobil:</b> +36 30/30-50-750<br />
+                            <b>Min rendelés:</b> 2000 HUF<br />
+                            <b>Kiszállítási terület:</b> Debrecen<br />
+                            <b>Szállítási idő:</b> 60-70 perc <br />
+                            <b>Szállítási díj:</b> 250 HUF <br />
+                            <b>Kapcsolat:</b>
+                            <b>4032 Debrecen, Pallagi út, 7</b>
+                            <b>e-mail:</b> info@redhornsdebrecen.hu
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="title">Térkép</div>
+                        <ul>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.720953570422!2d21.628430715802942!3d47.55375949961987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47470ded3dfd6f91%3A0x693a8d3b0f795990!2sDebrecen%2C%20Pallagi%20%C3%BAt%207%2C%204032!5e0!3m2!1shu!2shu!4v1666350333371!5m2!1shu!2shu"
+                                width="500" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="left">
+                        <span style="margin-top: 35px">© Copyright RedHorns Restaurant. 2022 Minden jog
+                            fenntartva.</span>
+                    </div>
+                    <div class="right">
+                        <a href=""><img src="kep/logo.png" style="height: 60px" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
