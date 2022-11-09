@@ -1,0 +1,427 @@
+body {
+  background-image: url("kep/bg.png");
+  background-repeat: round;
+  background-size: contain;
+  overflow-x: hidden;
+}
+
+nav[class="nav"] {
+  animation: load 1s forwards;
+}
+
+nav[class="nav"] ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+nav[class="nav"] li {
+  float: right;
+  margin-top: 2.5%;
+  margin-right: 20px;
+}
+
+nav[class="nav"] li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: large;
+  border-radius: 10px;
+}
+
+nav[class="nav"] li a:hover {
+  background-color: #111;
+  color: crimson;
+}
+
+nav[class="nav"] ul img {
+  width: 8%;
+  padding: 2%;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0%;
+  }
+
+  10% {
+    opacity: 10%;
+  }
+
+  25% {
+    opacity: 25%;
+  }
+
+  35% {
+    opacity: 35%;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  65% {
+    opacity: 65%;
+  }
+
+  75% {
+    opacity: 75%;
+  }
+
+  85% {
+    opacity: 85%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+svg {
+  opacity: 90%;
+}
+
+.etelek {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 92%;
+  float: right;
+  height: 406px;
+  border-left: #ff4848 solid 4px;
+}
+
+.pre {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 8%;
+  float: left;
+  height: 406px;
+}
+
+.jelolo {
+  display: flex;
+  border: #ff4848 solid 5px;
+  border-radius: 15px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 2.46em;
+  width: 150px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.jelolo2 {
+  display: flex;
+  border: #ff4848 solid 5px;
+  border-radius: 15px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 2.16em;
+  color: aliceblue;
+  width: 150px;
+}
+
+.jelolo3 {
+  display: flex;
+  border: #ff4848 solid 5px;
+  border-radius: 15px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 2.2em;
+  color: aliceblue;
+  width: 150px;
+}
+
+.jelolo4 {
+  display: flex;
+  border: #ff4848 solid 5px;
+  border-radius: 15px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 2.865em;
+  color: aliceblue;
+  width: 150px;
+  padding-left: -10px;
+}
+
+.oszlop {
+  padding: 45px;
+  flex: 43;
+  background-color: rgba(23, 23, 23, 0.9);
+}
+
+.oszlop p {
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+div.oszlop img:hover {
+  transition-duration: 0.8s;
+  transform: scale(1.15);
+}
+
+.kosar_button {
+  border-radius: 8px;
+}
+
+.container {
+  position: relative;
+}
+
+.levesek,
+.foetelek,
+.desszertek,
+.Üdítők,
+.eloetelek,
+.koretek {
+  position: relative;
+  border-bottom: #ff4848 dotted 5px;
+  color: whitesmoke;
+  text-align: center;
+  background: rgb(44, 59, 69, 0.8);
+  padding: 15px;
+
+}
+
+
+
+.etlap {
+  list-style-type: none;
+  font-size: 1.2em;
+  text-shadow: 5px;
+}
+
+.levesek h2,
+.foetelek h2,
+.desszertek h2,
+.Üdítők h2,
+.eloetelek h2,
+.koretek h2 {
+  color: #ff6161;
+  padding-bottom: 30px;
+
+}
+
+.eloetelek {
+  border-top: #ff4848 dotted 5px;
+}
+
+.kozep {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #00fff2;
+  font-style: oblique;
+}
+
+.lent {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #00ff37;
+  font-style: oblique;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(44, 59, 69);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(220, 20, 60, 0.842);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 19, 66, 0.979);
+}
+
+.logobutton {
+  width: 200px;
+}
+
+img[alt="kosarlogo"] {
+  size: 20em;
+}
+
+.footer {
+  position: relative;
+  color: aliceblue;
+  background-color: dimgray;
+}
+
+.footer p,
+.footer h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: rgb(255, 78, 78);
+}
+
+div[class="container"] img:checked {
+  border: #00ff37 solid;
+}
+
+.labl {
+  display: block;
+  width: 400px;
+}
+
+.labl>input {
+  visibility: hidden;
+  position: absolute;
+}
+
+.labl>input+div {
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.labl>input:checked+div img {
+  border: 5px solid #ff4848;
+}
+
+
+footer .utils {
+  background: #d0d0d0;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 25px 25px 25px;
+}
+
+footer .utils img {
+  max-height: 250px;
+  margin: auto;
+  display: block;
+}
+
+footer .utils .block {
+  flex: 1;
+  margin: 0px 35px 0px 35px;
+}
+
+.item-footer button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  background: #61ec70;
+  border: transparent;
+  border-bottom: 3px solid #5eda64;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.item-footer button:hover,
+.item-footer button:focus,
+.item-footer button.focus,
+.item-footer button:focus:active,
+.item-footer button:hover:active {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  background: #51c55d;
+  border: transparent;
+  border-bottom: 3px solid #5eda64;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer .utils {
+  background: #333333;
+}
+
+.modal-footer {
+  border-top: 1px solid #4e4e4e;
+}
+
+.row .block .title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: wheat;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.home{
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.home .content h3{
+  font-size: 5rem;
+  color:crimson;
+}
+.home .content p{
+  font-size: 1.7rem;
+  color:whitesmoke;
+  padding:1rem 0;
+}
+.steps{
+  
+  gap:1.5rem;
+  padding:1rem;
+}
+
+.steps .box{
+  flex:1 1 25rem;
+  padding:1rem;
+}
+
+.steps .box img{
+  border-radius: 50%;
+  border:1rem solid #fff;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+}
+
+.steps .box h3{
+  font-size: 3rem;
+  color:whitesmoke;
+  padding:1rem;
+}
+div h1[class="heading"] {
+  color: whitesmoke;
+}
+span {
+  color: #ff4848;
+  font-weight: bold;
+}
+.elerhetoseg {
+  position: relative;
+  border-bottom: #ff4848 dotted 5px;
+  border-top: #ff4848 dotted 5px;
+  color: whitesmoke;
+  text-align: center;
+  background: rgb(44, 59, 69, 0.8);
+  padding: 15px;
+  font-size: large;
+}
+
+.elerhetoseg h1 {
+  color: #ff4848;
+  padding-bottom: 30px;
+}
